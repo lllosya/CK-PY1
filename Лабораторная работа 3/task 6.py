@@ -7,8 +7,6 @@ for index, value in enumerate(list_numbers):
         max_num = value
         index_num = index
 
-index_last_num = len(list_numbers) - 1
-
-list_numbers[index_num], list_numbers[index_last_num] = list_numbers[index_last_num], list_numbers[index_num]
+list_numbers[index_num], list_numbers[-1] = list_numbers[-1], list_numbers[index_num]
 
 print(list_numbers)
