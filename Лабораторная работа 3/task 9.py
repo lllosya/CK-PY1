@@ -7,7 +7,6 @@ money_capital = 0  # количество денег, чтобы прожить 
 
 for months in range(months):
     delta = spend - salary
-    months -= 1
     money_capital += delta
     spend *= 1 + increase
 
